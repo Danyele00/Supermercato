@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html
+	lang="en"
+	xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:th="http://www.thymeleaf.org"
+>
+	<head>
+		<title>Aggiorna articolo</title>
+	</head>
+	<body>
+	<body bgcolor="	#ffebcd">
+	
+		<div align="center">
+		
+			<h1>Aggiorna Articolo</h1>
+			
+			<form action="#" th:action="@{/articoloSalvato}"  th:object="${articoli}" method="POST">
+				<p>Codice Art</p>
+				<input type="text" th:field="*{codArt}"placeholder="codArt">
+				<p>Codice stat</p>
+				<input type="text" th:field="*{codStat}"placeholder="codStat">
+				<p>Data Creazione</p>
+				<input type="text" th:field="*{dataCreazione}" placeholder="dataCreazione">
+				<p>Descrizione</p>
+				<input type="text" th:field="*{descrizione}" placeholder="descrizione">
+				<p>Id Famass</p>
+				<input type="text" th:field="*{idFamass}" placeholder="idFamass">
+				<p>Id Iva</p>
+				<input type="text" th:field="*{idIva}" placeholder="idIva">
+				<p>Id Stat O Ar</p>
+				<input type="text" th:field="*{idStatOArt}" placeholder="idIva">
+				<p>Peso Netto</p>
+				<input type="text" th:field="*{pesoNetto}" placeholder="pesoNetto">
+				<p>Pz Cartone</p>
+				<input type="text" th:field="*{pzCart}" placeholder="pzCart">
+				<p>Unità misura</p>
+				<input type="text" th:field="*{um}" placeholder="um">
+				
+				<br><br>
+				<button type="submit">Aggiorna Articolo</button>
+			</form>
+			
+			<a href="/">Home</a>
+		</div>
+	</body>
+
+
+</html>
+
+</html>
